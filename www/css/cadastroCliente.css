@@ -1,0 +1,267 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+body{
+	
+	background-image: url('../img/base.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;	
+	opacity: 0.9;
+}
+
+a{
+	text-decoration: none;
+}
+
+.formulario{
+	position: relative;
+	width: 700px;
+	margin: 65px auto 30px auto;
+	padding: 60px 30px;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	background: rgba(102, 255, 51, 0.3);
+	margin-bottom: 20px;
+}
+
+.formulario1{
+	position: relative;
+	width: 950px;
+	margin: 65px auto 30px auto;
+	padding: 60px 30px;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	background: rgba(102, 255, 51, 0.3);
+	margin-bottom: 20px;
+}
+
+
+
+label{
+	font-family: "Ubuntu", sans-serif;;
+	font-weight: bolder;
+	color: #66ff33;
+	text-shadow: 3px 3px 10px #000;
+	font-size: 	20px;
+}
+
+h2{
+	font-family: Catamaran, sans-serif;
+	font-size: 42px;
+	text-shadow: 2px 2px 15px #000;
+	font-weight: bolder;
+	color: #fff;
+}
+
+input{
+	padding-left: 10px;
+	border: 2px solid #53f63d;
+	background-color: #000;
+	color: 	#fff;
+	font-family: Ubuntu;
+	font-size: 	20px;
+	height: 25px;
+}
+
+input#rg,#cpf,#cnpj{
+	width: 250px;
+	border-radius: 30px;
+}
+input#nome,#sobrenome,#phone,#celular{
+	width: 200px;
+	border-radius: 30px;
+}
+
+input#datanasc,#cep,#senha,#confsenha{
+	width: 150px;
+	
+	border-radius: 30px;
+
+}
+
+input#rua,#email{
+	
+	width: 400PX;
+	
+	border-radius: 30px;
+}
+
+input#numero,#complemento{
+	
+	width: 20%;
+	
+	border-radius: 30px;
+}
+
+input#bairro{
+	
+	width: 40%;
+	
+	border-radius: 30px;
+}
+
+input#cidade{
+	
+	width: 30%;
+	
+	border-radius: 30px;
+}
+
+input#estado{
+	
+	width: 30%;
+	
+	border-radius: 30px;
+}
+
+header{
+	position: fixed;
+	height: 110px;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: #53f63d;
+	color: #fff;
+	border-bottom: 2px solid #000;
+}
+
+#check{
+	display: none;
+}			
+
+#icone{
+	cursor: pointer;
+	padding: 15px;
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	top: 5px;
+	left: 5px;
+	z-index: 1;
+}
+
+.barra{
+	background-color: #53f63d;
+	height: 300px;
+	width: 800px;
+	position: absolute;
+	top: 150px;
+	transition: all .2s linear;
+	left: -10000px;
+	z-index: 1;
+	border: 2px solid #000;
+	border-radius: 10px;
+
+}
+
+nav{
+	width: 100%;
+	position: fixed; 
+	top: 50px;
+	color: #000;
+}
+
+.link{
+	background-color: #53f63d;
+	padding: 20px;
+	width: 120px;
+	height: 0px;
+	font: 'Arial';
+	font-size: 12pt;
+	transition: all .2s linear;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 20px;
+	opacity: 0;
+	margin-top: 200px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bolder;
+	font-size: 15px;
+
+}
+
+.link:hover{
+	background-color: #000;
+	border: 2px solid #000;
+	border-radius: 20px;
+	width: 150px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+	color: #fff;
+}
+
+.link0{
+	background-color: #53f63d;
+	width: 150px;
+	height: 20px;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 20px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.link0:hover{
+	background-color: #000;
+	color: #fff;
+	border: 2px solid #53f63d;
+	border-radius: 20px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bolder;
+	font-size: 18px;
+	width: 200px;
+	height: 25px;
+	transition: 0.5s;
+}
+
+.link1{
+	background-color: #53f63d;
+	width: 150px;
+	height: 20px;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 20px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bolder;
+	font-size: 15px;
+
+}
+
+.link1:hover{
+	background-color: #000;
+	color: #fff;
+	width: 200px;
+	height: 25px;
+	border: 2px solid #53f63d;
+	border-radius: 20px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bolder;
+	font-size: 18px;
+	transition: 0.5s;
+}
+
+.link2{
+	position: absolute;
+	top: 10px;
+	left: 95%;
+}
+
+#check:checked ~ .barra{
+	transform: translateX(10200px);
+}
+
+#check:checked ~ .barra nav a .link{
+	opacity: 1;
+	margin-top: 0;
+}
+
+.voltar{
+	position: fixed;
+	top: 15px;
+	left: 15px;
+}
